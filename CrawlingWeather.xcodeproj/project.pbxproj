@@ -12,7 +12,24 @@
 		9896F561217C63CF0065D099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9896F55F217C63CF0065D099 /* Main.storyboard */; };
 		9896F563217C63D20065D099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9896F562217C63D20065D099 /* Assets.xcassets */; };
 		9896F566217C63D20065D099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9896F564217C63D20065D099 /* LaunchScreen.storyboard */; };
+		9896F56E217C664A0065D099 /* CrawlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F56D217C664A0065D099 /* CrawlingViewController.swift */; };
+		98D01DE7217DE44300FB9EE3 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D01DE6217DE44300FB9EE3 /* SwiftSoup.framework */; };
+		98D01DE8217DE44300FB9EE3 /* SwiftSoup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98D01DE6217DE44300FB9EE3 /* SwiftSoup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98D01DE9217DE44300FB9EE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98D01DE8217DE44300FB9EE3 /* SwiftSoup.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9896F558217C63CF0065D099 /* CrawlingWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrawlingWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +39,8 @@
 		9896F562217C63D20065D099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9896F565217C63D20065D099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9896F567217C63D20065D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9896F56D217C664A0065D099 /* CrawlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlingViewController.swift; sourceTree = "<group>"; };
+		98D01DE6217DE44300FB9EE3 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/iOS/SwiftSoup.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D01DE7217DE44300FB9EE3 /* SwiftSoup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,7 @@
 		9896F54F217C63CF0065D099 = {
 			isa = PBXGroup;
 			children = (
+				98D01DE6217DE44300FB9EE3 /* SwiftSoup.framework */,
 				9896F55A217C63CF0065D099 /* CrawlingWeather */,
 				9896F559217C63CF0065D099 /* Products */,
 			);
@@ -60,6 +81,7 @@
 				9896F562217C63D20065D099 /* Assets.xcassets */,
 				9896F564217C63D20065D099 /* LaunchScreen.storyboard */,
 				9896F567217C63D20065D099 /* Info.plist */,
+				9896F56D217C664A0065D099 /* CrawlingViewController.swift */,
 			);
 			path = CrawlingWeather;
 			sourceTree = "<group>";
@@ -74,6 +96,7 @@
 				9896F554217C63CF0065D099 /* Sources */,
 				9896F555217C63CF0065D099 /* Frameworks */,
 				9896F556217C63CF0065D099 /* Resources */,
+				98D01DE9217DE44300FB9EE3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9896F55E217C63CF0065D099 /* ViewController.swift in Sources */,
+				9896F56E217C664A0065D099 /* CrawlingViewController.swift in Sources */,
 				9896F55C217C63CF0065D099 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +308,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBKLZA456E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CrawlingWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +330,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBKLZA456E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CrawlingWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
