@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980A7C9D217E105300F81502 /* Crawling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980A7C9C217E105300F81502 /* Crawling.storyboard */; };
 		9896F55C217C63CF0065D099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F55B217C63CF0065D099 /* AppDelegate.swift */; };
 		9896F55E217C63CF0065D099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F55D217C63CF0065D099 /* ViewController.swift */; };
 		9896F561217C63CF0065D099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9896F55F217C63CF0065D099 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		980A7C9C217E105300F81502 /* Crawling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Crawling.storyboard; sourceTree = "<group>"; };
 		9896F558217C63CF0065D099 /* CrawlingWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrawlingWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9896F55B217C63CF0065D099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9896F55D217C63CF0065D099 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980A7C9B217E0FFE00F81502 /* CrawlingFunction */ = {
+			isa = PBXGroup;
+			children = (
+				9896F56D217C664A0065D099 /* CrawlingViewController.swift */,
+				980A7C9C217E105300F81502 /* Crawling.storyboard */,
+			);
+			path = CrawlingFunction;
+			sourceTree = "<group>";
+		};
+		980A7C9E217E11E500F81502 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9896F55B217C63CF0065D099 /* AppDelegate.swift */,
+				9896F562217C63D20065D099 /* Assets.xcassets */,
+				9896F567217C63D20065D099 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		980A7C9F217E126500F81502 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9896F564217C63D20065D099 /* LaunchScreen.storyboard */,
+				9896F55D217C63CF0065D099 /* ViewController.swift */,
+				9896F55F217C63CF0065D099 /* Main.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		9896F54F217C63CF0065D099 = {
 			isa = PBXGroup;
 			children = (
@@ -75,13 +106,9 @@
 		9896F55A217C63CF0065D099 /* CrawlingWeather */ = {
 			isa = PBXGroup;
 			children = (
-				9896F55B217C63CF0065D099 /* AppDelegate.swift */,
-				9896F55D217C63CF0065D099 /* ViewController.swift */,
-				9896F55F217C63CF0065D099 /* Main.storyboard */,
-				9896F562217C63D20065D099 /* Assets.xcassets */,
-				9896F564217C63D20065D099 /* LaunchScreen.storyboard */,
-				9896F567217C63D20065D099 /* Info.plist */,
-				9896F56D217C664A0065D099 /* CrawlingViewController.swift */,
+				980A7C9E217E11E500F81502 /* Resource */,
+				980A7C9F217E126500F81502 /* Root */,
+				980A7C9B217E0FFE00F81502 /* CrawlingFunction */,
 			);
 			path = CrawlingWeather;
 			sourceTree = "<group>";
@@ -146,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9896F566217C63D20065D099 /* LaunchScreen.storyboard in Resources */,
+				980A7C9D217E105300F81502 /* Crawling.storyboard in Resources */,
 				9896F563217C63D20065D099 /* Assets.xcassets in Resources */,
 				9896F561217C63CF0065D099 /* Main.storyboard in Resources */,
 			);
