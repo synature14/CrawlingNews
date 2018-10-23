@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		980A7C9D217E105300F81502 /* Crawling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980A7C9C217E105300F81502 /* Crawling.storyboard */; };
+		988C51DF217EBB4C00EB27B6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988C51DE217EBB4C00EB27B6 /* Alamofire.framework */; };
+		988C51E0217EBB4C00EB27B6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 988C51DE217EBB4C00EB27B6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9896F55C217C63CF0065D099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F55B217C63CF0065D099 /* AppDelegate.swift */; };
 		9896F55E217C63CF0065D099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9896F55D217C63CF0065D099 /* ViewController.swift */; };
 		9896F561217C63CF0065D099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9896F55F217C63CF0065D099 /* Main.storyboard */; };
@@ -26,6 +28,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				98D01DE8217DE44300FB9EE3 /* SwiftSoup.framework in Embed Frameworks */,
+				988C51E0217EBB4C00EB27B6 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		980A7C9C217E105300F81502 /* Crawling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Crawling.storyboard; sourceTree = "<group>"; };
+		988C51DE217EBB4C00EB27B6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		9896F558217C63CF0065D099 /* CrawlingWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrawlingWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9896F55B217C63CF0065D099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9896F55D217C63CF0065D099 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D01DE7217DE44300FB9EE3 /* SwiftSoup.framework in Frameworks */,
+				988C51DF217EBB4C00EB27B6 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +76,6 @@
 			children = (
 				9896F55B217C63CF0065D099 /* AppDelegate.swift */,
 				9896F562217C63D20065D099 /* Assets.xcassets */,
-				9896F567217C63D20065D099 /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -89,6 +93,7 @@
 		9896F54F217C63CF0065D099 = {
 			isa = PBXGroup;
 			children = (
+				988C51DE217EBB4C00EB27B6 /* Alamofire.framework */,
 				98D01DE6217DE44300FB9EE3 /* SwiftSoup.framework */,
 				9896F55A217C63CF0065D099 /* CrawlingWeather */,
 				9896F559217C63CF0065D099 /* Products */,
@@ -106,6 +111,7 @@
 		9896F55A217C63CF0065D099 /* CrawlingWeather */ = {
 			isa = PBXGroup;
 			children = (
+				9896F567217C63D20065D099 /* Info.plist */,
 				980A7C9E217E11E500F81502 /* Resource */,
 				980A7C9F217E126500F81502 /* Root */,
 				980A7C9B217E0FFE00F81502 /* CrawlingFunction */,
